@@ -1,0 +1,18 @@
+{
+  "name": "hello-npm",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "mkdir -p npm-lib && cp -R ../../../npm-lib/dist/* npm-lib",
+    "build:watch": "watch 'npm run build' ../../../npm-lib/dist"
+  },
+  "private": true,
+  "dependencies": {
+    "immer": "9.0.15"
+  },
+  "author": "Marcus Riemer",
+  "license": "proprietary",
+  "devDependencies": {
+    "supabase": "1.7.0",
+    "watch": "^1.0.2"
+  }
+}
